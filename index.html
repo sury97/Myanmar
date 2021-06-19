@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>어머! 미얀마어가 이렇게 쉽다고?</title>
+	<meta name="description" content="어머! 미얀마어가 이렇게 쉽다고?">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://limmh617.github.io/2020-12-15/">
+	<meta property="og:image" content="thumbnail.jpg">
+	<meta property="og:title" content="어머! 미얀마어가 이렇게 쉽다고?">
+	<meta property="og:description" content="어머! 미얀마어가 이렇게 쉽다고?">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&family=Roboto:wght@100;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css" />
+  
+</head>
+
+
+<style>
+html {
+	height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    word-break: keep-all;
+	}	
+body {
+	margin: 0;
+	color: white;
+	background: #000;
+	}
+ul {
+	margin: 0;
+    list-style-type: none;
+	}
+a {text-decoration: none;}
+
+
+.fullpage {
+	width: 100%;
+	overflow-x: hidden;
+	}
+.header	{
+	width: 100%;
+	margin: 0px;
+	box-sizing: border-box;
+	position: fixed;
+	background: #000;
+    z-index: 600;
+	}
+.header .title{ 
+	width:100%;
+    border-bottom: 3px solid #fff;
+	}
+.header .title .inner {
+	width: 1275px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px auto;
+	}
+.header .title .inner .image{
+	background: url(title.png) no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    background-size: contain;
+	background-position: bottom;
+	transition: .3s ease-in-out;
+	}
+
+/* 스크롤시 축소 */
+.header .title .inner .image .shrink {
+	height: 0px;
+	}
+
+
+.header .nav {
+	width: 1275px;
+    height: 52.5px;
+	background: #000;
+	margin: 0px auto;
+    }
+.header .nav ul {
+	padding: 0px;
+	}
+.header .nav ul li {
+    cursor: pointer;
+    width: 318.75px;
+    height: 22.5px;
+    margin: 15px 0px;
+    float: left;
+    }
+.header .nav ul li:nth-child(1) {
+	background: url(intro.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	background-position: left;
+	}
+.header .nav ul li:nth-child(2) {
+	background: url(diff.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	background-position: left;
+	}
+.header .nav ul li:nth-child(3) {    
+	background: url(ju.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	background-position: right;
+	}
+.header .nav ul li:nth-child(4) {    
+	background: url(seemore.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	background-position: right;
+	}
+.header .nav ul li a{    
+	display: inline-block;
+	width:100%;
+	height:100%;
+	}
+	
+	
+.section1 {
+	width:1275px;
+	height: 1500px;
+	margin: 0px auto;
+	}
+.section1 .img{
+	margin: 155.5px 0px 0px 0px;
+	width: 1275px;
+    height: 712.5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+	}
+.section1 .img .img01{
+	width: 1275px;
+	position: fixed;
+	top: 150px;
+	}
+.section1 .img .arrow1{
+    position: absolute;
+    width: 75px; 
+    bottom: 110px;
+    left: 637.5px;
+	}
+.section1 .intro{
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    top: 1200px;	
+	}
+
+
+.bg_black {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	background: #000;
+	position: relative;
+	}
+.section2 {
+	width: 1275px;
+	height: 900px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    background: #000;
+	}
+.section2 .top_area {
+	width: 100%;
+	height: 360px;
+	padding-top: 150px;
+	}
+.section2 .top_area .text_area {
+	float: left;
+	width: 577.5px;
+	height: 300px;
+	margin: 30px;
+	position: relative;
+	}
+.section2 .top_area .text_area .title{
+    width: 100%;
+    height: 150px;
+	background: url(3.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	}
+.section2 .top_area .text_area .arrow2 {
+	position: absolute;
+	top: 41%;
+	left: 48%;
+    transform: translate(-50%);
+	width: 60px;
+	}
+.section2 .top_area .text_area .text_sub_area{
+	padding-left: 75px;
+	padding-top: 52.5px;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.8;
+	}
+.section2 .top_area .img_area{
+	float: right;
+	width: 577.5px;
+	height: 300px;
+	margin: 30px;
+	background: url(gif1.jpg) no-repeat;
+    background-size: cover;
+	background-position: top;
+	}
+.section2 .bottom_area {
+	width: 100%;
+	height: 360px;
+	}
+.section2 .bottom_area .text_area {
+	float: right;
+	width: 577.5px;
+	height: 300px;
+	margin: 30px;
+	position: relative;
+	}
+.section2 .bottom_area .text_area .title{
+    width: 100%;
+    height: 150px;
+	background: url(4.png) no-repeat;
+    box-sizing: border-box;
+    background-size: contain;
+	}
+.section2 .bottom_area .text_area .arrow2 {
+	position: absolute;
+	top: 41%;
+	left: 35%;
+    transform: translate(-50%);
+	width: 60px;
+	transform: rotate(90deg);
+	}
+.section2 .bottom_area .text_area .text_sub_area{
+	padding-left: 75px;
+	padding-top: 52.5px;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.8;
+	}
+.section2 .bottom_area .img_area{
+	float: left;
+	width: 577.5px;
+	height: 300px;
+	margin: 30px;
+	background: url(5.jpg) no-repeat;
+    background-size: cover;
+	background-position: top;
+	}
+
+
+.section3 {
+	width: 1530px;
+	height:1000px;
+	position: relative;
+	margin: 160px auto 320px auto;
+	box-sizing: border-box;
+	padding-top: 130px;
+	}
+.section3 .img_area {
+	background: url(7.png) no-repeat;
+    height: 1180px;
+    width: 720px;
+    margin: 100px auto;
+    background-size: contain;
+    background-position: center;
+	}
+.section3 .text_area {
+	position: absolute;
+	width: 100%;
+	height: 360px;
+	box-sizing: border-box;
+	}
+.section3 .text_area .title1 {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 36px;
+	background: url(6-1.png) no-repeat;
+    background-size: contain;
+	}
+.section3 .text_area .title2 {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 36px;
+	background: url(6-2.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+	}
+.section3 .text_area .title3 {
+	width: 100%;
+	height: 90px;
+	margin-bottom: 36px;
+	background: url(7-3.png) no-repeat;
+    background-size: contain;
+	}
+.section3 .text_area2 {
+	position: absolute;
+	top: 1200px;
+	width: 100%;
+	height: 360px;
+	box-sizing: border-box;
+	}
+
+.section3 .text_area2 .text_sub_area3 {
+	width: 100%;
+	height:100px;
+	margin-bottom: 100px;
+	background: url(6-3.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+	}
+
+.section3 .popup {
+    position: absolute;
+    font-size: 1em;
+    line-height: 1.8;
+    top: 420px;
+    left: 60%;
+	}
+.section3 .popup-box {
+    background: #e34600;
+    padding: 9px;
+    box-sizing: border-box;
+   	}
+
+
+.section4 {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto 190px auto;
+	}
+
+.section4 .top_area {
+	width: 1275px;
+	height: 1767.5px;
+	margin: 0px auto;
+	position: relative;
+	}
+.section4 .top_area .left_area {
+	float: left;
+	width: 562.5px;
+	height: 728px;
+	padding: 112.5px 56.25px 0px 0px;
+	}
+.section4 .top_area .left_area .text_area {
+	width: 100%;
+	height: 112.5px;
+	background: url(9-1.png) no-repeat;
+    background-size: contain;
+    background-position: top;
+	}
+.section4 .top_area .left_area .img {
+	width: 562px;
+	height: 562px;
+	background: url(9-2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1px solid #3cff00;
+    box-sizing: border-box;
+	}
+.section4 .top_area .right_area {
+	float: right;
+	width: 462.5px;
+	padding: 225px 100px 0px 56.25px;
+	font-size: 1.2em;
+    line-height: 1.8;
+	}
+.section4 .top_area .left_area2 {
+	float: left;
+	width: 462.5px;
+	height: 720.75px;
+	padding: 210px 56.25px 0px 100px;
+	font-size: 1.5em;
+    line-height: 1.8;
+	}
+.section4 .top_area .right_area2 {
+	float: right;
+	width: 562.5px;
+	height: 889.5px;
+	padding: 200px 0px 0px 56.25px;
+	}
+.section4 .top_area .right_area2 .text_area {
+	width: 100%;
+	height: 281.25px;
+	background: url(10-1.png) no-repeat;
+    background-size: contain;
+    background-position: top;
+	}
+
+.section4 .bottom_area {
+	width: 1275px;
+	height: 100%;
+	margin: 0px auto;
+	}
+.section4 .bottom_area .text_area {
+	width: 815.25px;
+    height: 112.5px;
+    margin: 0px auto;
+    background: url(11-1.png) no-repeat;
+    background-size: contain;
+    background-position: top;
+    box-sizing: border-box;
+	}
+.section4 .bottom_area .img {
+	width: 1275px;
+    height: 900px;
+    margin: 0px auto;
+    background: url(11-2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+	}
+.section4 .bottom_area .text_sub_area1 {
+	margin-left: 75px;
+	width: 62%;
+	font-size: 3em;
+    line-height: 1.8;
+    margin-top: 75px;
+	}
+.section4 .bottom_area .text_sub_area2 {
+	margin-left: 75px;
+	position: relative;
+	font-size: 1em;
+    line-height: 1.8;
+	}
+.section4 .bottom_area .text_sub_area2 p {
+	padding-left: 300px;
+	padding-right: 100px;
+	}
+.section4 .bottom_area .text_sub_area3 {
+	margin-left: 75px;
+	width: 62%;
+	font-size: 1em;
+    line-height: 1.8;
+    margin-top: 16px;
+	}
+.section4 a {
+	border-bottom: 2px solid #e34600;
+	color: #e34600;
+	font-weight: 700;
+	}
+
+
+.section5 {
+	width: 1275px;
+	margin: 0px auto 320px auto;
+	padding-top: 50px;
+	box-sizing: border-box;
+	}
+.section5 .title {
+	width:100%;
+	height: 75px;
+	background: url(12.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+	}
+
+.section5 .bottom_area {
+	width: 100%;
+	font-size: 2.5em;
+	line-height: 1.8;
+	}
+.section5 .bottom_area .text_area1 {
+	margin-left: 75px;
+	width:62%;
+	}	
+.section5 .text_area2 {
+	margin-left: 75px;
+	position: relative;
+	}
+.section5 .text_area2 p {
+	padding-left:100px;
+	padding-right: 100px;
+	}
+.section5 .text_area2 .arrow2 {
+	width: 200px;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	}
+
+
+.section7 {
+	width: 1275px;
+	margin: 0px auto;
+	padding-top: 130px;
+	}
+.section7 .top_area {
+    position: relative;
+    width: 100%;
+    height: 225px;
+	}
+.section7 .top_area .left_area {
+	float: left;
+	width: 70%;
+	height: 100%;
+	background: url(16.png) no-repeat;
+    background-size: contain;
+    background-position: left;
+	}
+
+.section7 .bottom_area {
+	margin-top: 150px;
+	padding-bottom: 10px;
+	width: 100%;
+	font-weight: 700;
+	}
+.section7 .bottom_area .text_area {
+	height: 60px;
+	font-size: 1.5em;
+}
+.section7 .bottom_area .button_area {
+	position: relative;
+	top: 37.5px;
+	width: 90%;
+	height: 75px;
+	}
+.section7 .bottom_area .button_area .button {
+	padding: 15px;
+	border-radius: 37.5px;
+	border: 2px solid #3cff00;
+	text-align: center;
+	color: #3cff00;
+	font-weight: 700;
+	font-size: 1em;
+	margin-right: 22.5px;
+	}
+
+.footer {
+	height: 150px;
+	width: 1275px;
+	position: relative;
+	margin: 0px auto;
+	padding-top: 10px;
+	font-size: 1em;
+	font-weight: 700;
+	background: #000;
+	}
+.footer ul {
+	padding: 0px;
+	}
+.footer ul:nth-child(1) {
+	position: absolute;
+	left: 0px;
+	}
+.footer ul:nth-child(2) {
+	position: absolute;
+	right: 200px;
+	cursor: pointer;
+	}
+.footer ul:nth-child(3) {
+	position: absolute;
+	right: 0px;
+	cursor: pointer;
+	}
+
+
+.section1 .fadein {
+	animation: second 1.5s;
+	}
+	@keyframes second {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+
+
+.section2 .first {
+	animation-name: first;
+	animation-duration: 1s;
+	}
+	@keyframes first {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section2 .second {
+	animation-name: second;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	}
+	@keyframes second {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section2 .third {
+	animation-name: third;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	}
+	@keyframes third {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section2 .fadein {
+	animation-name: fadein;
+	animation-duration: 1s;
+	animation-delay: 0.9s;
+	}
+	@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+
+.section3 .first {
+	animation: first 1s;
+	}
+	@keyframes first {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section3 .second {
+	animation-name: second;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	}
+	@keyframes second {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section3 .third {
+	animation-name: third;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	}
+	@keyframes third {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section3 .forth {
+	animation-name: forth;
+	animation-duration: 1s;
+	animation-delay: 0.9s;
+	}
+	@keyframes forth {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section3 .fadein {
+	animation-name: fadein;
+	animation-duration: 0.6s;
+	}
+	@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+
+
+.section4 .fadein {
+	animation-name: fadein;
+	animation-duration: 1s;
+	}
+	@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+
+
+.section5 .fadein {
+	animation-name: fadein;
+	animation-duration: 1s;
+	}
+	@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+	}
+.section5 .first {
+	animation-name: first;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	}
+	@keyframes first {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section5 .second {
+	animation-name: second;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	}
+	@keyframes second {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section5 .third {
+	animation-name: third;
+	animation-duration: 1s;
+	animation-delay: 0.9s;
+	}
+	@keyframes third {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+
+.section7 .first {
+	animation-name: first;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	}
+	@keyframes first {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section7 .second {
+	animation-name: second;
+	animation-duration: 1s;
+	animation-delay: 0.6s;
+	}
+	@keyframes second {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+	}
+.section7 .third {
+	animation-name: third;
+	animation-duration: 1s;
+	animation-delay: 0.9s;
+	}
+	@keyframes third {
+	from {opacity: 0; margin-top: 50px;}
+	to {opacity: 1; margin-top: 0px;}
+
+
+</style>
+
+<body>
+<div class="fullpage" id="INTRO">
+
+
+<div class="header">
+
+  	<div class="title">
+    	<div class="inner">
+    		<div class="image" id="function"></div>
+    	</div>
+    </div>
+   
+    <div class="nav">
+    	<ul>
+			<li>
+			  	<a href="#INTRO"></a>
+		  	</li> 
+		  	<li>
+		  		<a href="#DIFF"></a>
+	  		</li>
+	  		<li>
+			 	<a href="#JU"></a>
+		  	</li>
+		  	<li>
+		  		<a href="#SEEMORE"></a>
+	  		</li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="section1">
+	<div class="img">
+		<img src="1.jpg" class="img01">
+			</div>
+		<img src="2.png" class="intro wow fadein">	
+</div>
+
+
+<div class="bg_black">
+<div class="section2">
+	<div class="top_area">
+   		<div class="text_area">
+   			<div class="title wow first"></div>
+   			
+   			<div class="text_sub_area wow third">버머어 글씨는 원래 정사각형이였지만 17세기 부터 종려나무잎을 종이로 사용하기 시작하여 나무잎 위에는 정사각형으로 쓰기에 불편함으로 원형으로 점점 바뀌게 되었다가 현재 버머어가 되었다. </div>
+   		</div>
+   		<div class="img_area wow fadein"></div>
+	</div>
+	<div class="bottom_area">
+		<div class="img_area wow fadein"></div>
+		<div class="text_area">
+			<div class="title wow first"></div>
+			<div class="text_sub_area wow third">‘버머어에 ?,!,!. 없다. 문장이 끝나면 ။ 를 쓰고, 중간 중간에는 ၊ 을 사용한다.</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="section3" id="DIFF">
+    <div class="text_area">
+        <div class="title1 wow first"></div>
+ 		<div class="title2 wow second"></div>
+  		<div class="title3 wow third"></div>
+    </div>
+	<div class="text_area2">
+		<div class="text_sub_area1 wow first"></div>
+		<div class="text_sub_area3 wow third"></div>
+	</div>
+
+    <div class="img_area wow fadein"></div>
+    <div class="popup wow forth">
+        <div class="popup-box"> 과연 비슷한 부분은 있을까요?</div>
+	</div>
+</div>
+
+
+<div class="section4">
+	<div class="title_area">
+		<div class="img wow fadein"></div>
+	</div>
+	<div class="top_area">
+		<div class="left_area">
+			<div class="text_area wow animate__fadeInLeft"></div>
+			<div class="img wow animate__animated animate__fadeInLeft animate__delay-1s"></div>
+		</div>
+		<div class="right_area wow animate__animated animate__fadeIn animate__delay-3s">
+			<p><p><br>문법 쓰는 방법이 거의 비슷하다.  </br>
+               <br>한글에 자음, 모음, 받침 있는 것 처럼 미얀마 글자도 자음, 모음, 받침이 있다. </br>
+               <br>쓰는 방법도 비숫하다.  </br>
+               <br>예를 들어-  </br>
+               <br> 한글  </br>
+               <br> 가 > ㄱ + ㅏ  </br>
+               <br> 미얀마어  </br>
+               <br> ဂါ > ဂ + ါ </br></p></p>
+		</div>
+		<div class="right_area2">
+			<div class="text_area wow animate__fadeInRight"></div>
+			<div class="img wow animate__animated animate__fadeInRight animate__delay-1s"></div>
+		</div>
+		<div class="left_area2 wow animate__animated animate__fadeIn animate__delay-3s">
+			<p>한글은 모든 소리를 글로 쓸 수 있게 만들었다지만 미얀마어는 쓰기과 소리가 다르게 할때가 많다. 
+               한글은 글자 모양 글을 발음하는 혀나 입의 구조가 표현 되 어있다. 미얀마어 글자는 글자의 생긴것에 따라 발음을 만들었다. </p>
+		</div>
+	</div>
+	<div class="bottom_area">
+		<div class="text_area wow animate__fadeInUp"></div>
+		<div class="img wow animate__animated animate__fadeInUp animate__delay-1s"></div>
+		<div class="text_sub_area1 wow animate__fadeInUp">
+			<p><br>안녕하세요 : 밍그라바 : မင်္ဂလာပါ ။</br>
+			<br>감사합니다 : 째주바 : ကျေးဇူးပါ ။</br>
+            <br>화장실 : 에이다 : အိမ်သာ </br>
+            <br>맛있다 : 아야따 시대 : အရသာ ရှိတယ်။  </br>   
+            <br>얼마에요 : 벨라블레 : ဘယ်လောက်လဲ။  </br>
+            <br>비싸다 : 쎄이지데 : စျေးကြီးတယ်။ </br></p>
+		</div>
+	</div>
+</div>
+
+
+<div class="section5" id="JU">
+<div class="title wow fadein"></div>
+
+	<div class="bottom_area">
+		<div class="text_area1 wow first">
+			<p> <br> 미얀마 파고다들 올라 갈때 신발 , 양말 다 벗고 맨발로 올라가야한다. </br>
+			<br>파고다에는 짧은 치마 ,바지 , 민소매 금지하여 반팔 옷,긴치마, 바지를 입어야 한다. </br>
+			<br>미얀마는 잠잘때 머리를 두는 곳이 해뜨는 쪽이여야 한다. </br>
+			<br>책상위에 앉으면 안 된다. </br>
+			<br>모든 물건을 머리 , 발 잘 구별해서 사용해야 된다. (예를들어 침대 , 머리 두고 자는 쪽으로 절대 발로 밟거나 발을 두면 안 된다.)</br>
+			<br>여자 속옷을 높게 두면 안 되고 그 밑으로 남자가 지나가면 안 된다. </br>
+			<br>자기보다 나이 많으신 분이 소파나 의자 있는데도 거기에 앉지 않고 바닥에 앉은 경우 무조건 따라 밑에 앉아야 한다. 나이 많은 사람보다 높게 앉으면 안 된다. </br>
+			<br>불교인 경우 집마다 불교 제단(?) 있고 그 제단에 올릴 또한 올린 꽃을 절대로 남새 맡아보거나 예쁘다고 말하면 안 된다. </br>
+</p>
+		</div>
+	</div>
+</div>	
+
+
+
+
+<div class="section7" id="SEEMORE">
+	<div class="top_area">
+		<div class="left_area wow animate__fadeInLeft"></div>
+		
+	<div class="bottom_area">
+  		<div class="text_area wow first">
+  			더 알아보기
+  		</div>
+	<div class="button_area">
+        <a href="https://www.youtube.com/playlist?list=PLhKJjTdtSzplpQ8e4b4NPHZZodMmcAiin" class="button wow second">
+			<span>쓰기 기초 YouTube</span> 
+		</a>
+		
+	</div>
+	</div>
+</div>
+
+
+<div class="footer">
+	<div class="wow animate__animated animate__fadeInUp animate__delay-1s">
+		<ul>All rights reserved by wint</ul>
+		<ul>16102372</ul>
+		<ul>WINT THONEDARI HTET</ul>
+	</div>
+</div> 
+
+</div>
+</body>
+
+<script src="wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+	var $window = $(window),
+		$title = $('#function');
+
+		$window.scroll(function(){
+			if($(this).scrollTop() > 1500){
+				if(!$title.hasClass('shrink')){
+					$title.addClass('shrink'), $title.removeClass('image');
+				}
+		}else{
+			if($title.hasClass('shrink')){
+				$title.removeClass('shrink'), $title.addClass('image');
+			}
+		}
+	})
+</script>
+</html>
